@@ -1,3 +1,5 @@
+## UNDER DEVELOPMENT, 0% Functional
+
 # Motorola One Fusion
 
 ## Device specifications
