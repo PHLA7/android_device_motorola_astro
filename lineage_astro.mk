@@ -15,11 +15,12 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from liber device
-$(call inherit-product, device/motorola/astro/device.mk)
+# TODO: add this file
+# Inherit from astro device
+#$(call inherit-product, device/motorola/astro/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -31,6 +32,7 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Motorola One Fusion
 PRODUCT_MANUFACTURER := motorola
 
+#TODO: configure boot animation
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
@@ -39,9 +41,10 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "motorola/astro_retail/astro:10/QPIS30.73-33-6/fffd8e:user/release-keys"
+BUILD_FINGERPRINT := "motorola/astro_retail/astro:11/RPL31.Q2-63-10-2/50a5c:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=astro_retail \
-    PRIVATE_BUILD_DESC="astro_retail-user 10 QPIS30.73-33-6 fffd8e release-keys"
+    PRIVATE_BUILD_DESC="astro_retail-user 11 RPL31.Q2-63-10-2 50a5c release-keys"
 
+#TODO: what is that
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
