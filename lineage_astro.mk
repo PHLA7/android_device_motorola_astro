@@ -15,12 +15,11 @@
 #
 
 # Inherit from those products. Most specific first.
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# TODO: add this file
 # Inherit from astro device
-#$(call inherit-product, device/motorola/astro/device.mk)
+$(call inherit-product, device/motorola/astro/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -29,16 +28,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_astro
 PRODUCT_DEVICE := astro
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola One Fusion
+PRODUCT_MODEL := motorola one fusion
 PRODUCT_MANUFACTURER := motorola
 
-#TODO: configure boot animation
-PRODUCT_AAPT_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_CONFIG := hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 700
 
 # Build info
 BUILD_FINGERPRINT := "motorola/astro_retail/astro:11/RPL31.Q2-63-10-2/50a5c:user/release-keys"
